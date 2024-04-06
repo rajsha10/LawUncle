@@ -31,7 +31,6 @@ const AboutArea = styled.div`
     color: #ffffff;
 
     h1{
-        margin-top: 3rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 4rem;
         font-weight: 700;
@@ -39,7 +38,6 @@ const AboutArea = styled.div`
     }
     
     p{
-        margin-top: 7rem;
         font-family: sans-serif;
         font-size: 2rem;
         padding: 0 4rem;
@@ -53,7 +51,6 @@ const ImgCont = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 5.2rem;
 `;
 
 export default About;

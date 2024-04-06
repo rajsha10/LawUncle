@@ -1,14 +1,13 @@
 import styled, { createGlobalStyle } from "styled-components";
-import FeaturePie from "../miniComponents/FeaturePie";
+import Feature1 from "../miniComponents/Feature1";
+import Feature2 from "../miniComponents/Feature2";
+
 const Features = (props) => {
     return(<>
         <FeatureArea>
             <h1>FEATURES</h1>
-            <FeaturePie imgAdd='/images/law.jpg' text='Feature1' />
-            <FeaturePie imgAdd='/images/law.jpg' text='Feature1' />
-            <FeaturePie imgAdd='/images/law.jpg' text='Feature1' />
-            <FeaturePie imgAdd='/images/law.jpg' text='Feature1' />
-            <FeaturePie imgAdd='/images/law.jpg' text='Feature1' />
+            <Feature1 />
+            <Feature2 />
         </FeatureArea>
 
     </>)
@@ -21,6 +20,7 @@ const FeatureArea = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 
     h1{
         margin-top: 3rem;
@@ -28,6 +28,7 @@ const FeatureArea = styled.div`
         font-size: 4rem;
         font-weight: 700;
         text-align: center;
+        text-shadow: 0 7px 10px rgba(0,0,0,0.3);
     }
 
 
