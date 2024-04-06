@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Container from './components/Container';
 import About from './components/About';
 import Features from './components/Features';
+import Accordion from './components/Accordion';
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Container />
             <About />
             <Features />
+            <Accordion />
           </>}>
           </Route>
         </Routes>
