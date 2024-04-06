@@ -61,5 +61,6 @@ p{
     font-family: 'Fontspring DEMO Biennale Bold';
     color: #8b7f75;
     transition: all 0.5s cubic-bezier(1,0,1,0);
+    padding: 2rem 0;
 
 }

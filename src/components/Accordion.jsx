@@ -35,8 +35,8 @@ const Accordion = (props) => {
 
 const data = [
     {
-        Q : 'Question 1',
-        answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorum temporibus labore facere quasi aut alias nihil, debitis atque rerum?",
+        Q : 'What is Law Uncle?',
+        answer: "Law Uncle is web3 app to provide quick guide and consultancy using AI and 101 sessions with Lawyers",
     },
     {
         Q : 'Question 2',
