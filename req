@@ -1,0 +1,8 @@
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Fontspring DEMO Biennale Bold';
+    src: url(${FontspringDEMOBiennaleBold}) format('opentype');
+  }
+`;
+
+import FontspringDEMOBiennaleBold from "/fonts/Fontspring-DEMO-biennale-bold.otf";
