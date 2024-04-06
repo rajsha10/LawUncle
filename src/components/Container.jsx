@@ -11,9 +11,11 @@ const Container = (props) => {
     return(<>
         <Heading>
           <h1>Law Uncle</h1>
-          <p>Lorem ipsum dolor sit, amet 
-          consectetur adipisicing elit. Hic, itaque.</p>
+          <p>Justice Delayed is Justice Denied</p>
+          
+          <a href="https://drive.google.com/file/d/1xVLZSpwhDDv0NEr-rzjhkeipELo5v5tZ/view?usp=drive_link">
           <button>Download our app</button>
+          </a>
         </Heading>
     </>);
 };
@@ -38,8 +40,9 @@ const Heading = styled.div`
     
     p{
       text-align: center;
+      color: #fff;
       width: 100%;
-      font-size: 2rem;
+      font-size: 3.5rem;
       margin-top: 0;
       text-shadow: 0 0 10px rgba(0,0,0,1);
     }

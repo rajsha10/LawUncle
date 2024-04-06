@@ -23,6 +23,7 @@ const FeatureArea = styled.div`
     justify-content: space-evenly;
 
     h1{
+        color: #000000;
         margin-top: 3rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 4rem;

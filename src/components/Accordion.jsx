@@ -1,4 +1,3 @@
-import styled, { createGlobalStyle } from "styled-components";
 import '../assets/Accordion.css';
 import { useState } from 'react';
 
