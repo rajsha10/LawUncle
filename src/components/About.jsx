@@ -3,7 +3,7 @@ import AboutImg from "../miniComponents/AboutImg";
 
 const About = (props) => {
     return(<>
-        <AboutArea>
+        <AboutArea className="aboutArea">
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit, minus nesciunt consequuntur id quia soluta temporibus repudiandae quos perferendis numquam tempora sed nihil ducimus eveniet distinctio quasi odit quisquam inventore non sint facilis veritatis. 
             Expedita error repellendus doloremque vero?</p>
@@ -44,6 +44,20 @@ const AboutArea = styled.div`
         text-align: center;
         width: 50%
     }
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        padding-bottom: 5rem;
+        h1{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            padding: 0 2rem;
+            width: 90%
+        }
+    }
 `;
 
 const ImgCont = styled.div`
@@ -51,6 +65,12 @@ const ImgCont = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
 `;
 
 export default About;

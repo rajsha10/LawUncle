@@ -24,11 +24,12 @@ const Feature2 = (props) => {
 const Feature1Area = styled.div`
     /* background-color: whitesmoke; */
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 5rem;
+    margin-bottom: 4rem;
 
     .infocont{
         height: 100%;
@@ -55,7 +56,6 @@ const Feature1Area = styled.div`
         font-family: 'Fontspring DEMO Biennale Bold';
         font-size: 4rem;
         color: #343434;
-        line-height: 4.5rem;
         text-shadow: 0 7px 10px rgba(54, 69, 79, 0.4);
     }
     
@@ -83,6 +83,36 @@ const Feature1Area = styled.div`
             scale: 0.98;
         }
         
+    }
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        margin-top: 3rem;
+
+        .infocont{
+            height: auto;
+            width: auto;
+            margin-left: 2rem;
+        }
+        
+        img{
+            width: 15rem;
+            margin-right: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            width: 60%;
+        }
+
+        button{
+            font-size: 1rem;
+            padding: 0.4rem 1rem;           
+        }
     }
 `;
 

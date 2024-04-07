@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Container = (props) => {
     return(<>
-        <Heading>
+        <Heading className="heading">
           <h1>Law Uncle</h1>
           <p>Justice Delayed is Justice Denied</p>
           
@@ -61,6 +61,20 @@ const Heading = styled.div`
       &:hover{
         scale: 1.02;
         opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 75vh;
+      gap: 20px;
+      h1{
+        font-size: 5rem;
+        letter-spacing: 5px;
+      }
+
+      p{
+        font-size: 1.8rem;
+        line-height: 0px;
       }
     }
 `;

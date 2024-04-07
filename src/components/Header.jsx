@@ -29,6 +29,10 @@ const Nav = styled.nav`
         background-color: #000000;
         box-shadow: 0 10px 10px rgba(0,0,0,0.5);
     }
+
+    .hamburgerMenu{
+        display: none;
+    }
 `;
 
 const Header = (props) => {
@@ -57,9 +61,10 @@ const Header = (props) => {
             <GlobalStyle />
             <Nav backgroundColor={backgroundColor} className={scrolled ? "scrolled" : ""}>
                 <Logo>
-                    <h1>Law Uncle</h1>
+                    {/* <h1>Law Uncle</h1> */}
+                    <img src="/images/LawUncle2.png" alt="" className="logo" />
                 </Logo>
-                <Menu>
+                <Menu className="menuNames">
                     <ul>
                         <li>Home</li>
                         <li>Download App &darr;</li>
@@ -81,6 +86,12 @@ const Logo = styled.div`
         color: #ffffff;
         font-size: 4.2rem;
         text-shadow: 0 5px 10px rgba(255,255,255,0.3);
+    }
+
+    .logo{
+        width: 10rem;
+        height: auto;
+        object-fit: cover;
     }
 `;
 

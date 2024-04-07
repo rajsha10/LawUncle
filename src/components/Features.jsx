@@ -4,7 +4,7 @@ import Feature2 from "../miniComponents/Feature2";
 
 const Features = (props) => {
     return(<>
-        <FeatureArea>
+        <FeatureArea className="featureArea">
             <h1>FEATURES</h1>
             <Feature1 />
             <Feature2 />
@@ -32,6 +32,14 @@ const FeatureArea = styled.div`
         text-shadow: 0 7px 10px rgba(0,0,0,0.3);
     }
 
+    @media screen and (max-width: 500px) {
+        height: auto;
+
+        h1{
+            margin-top: 1rem;
+            font-size: 3rem;
+        }
+    }
 
 `;
 

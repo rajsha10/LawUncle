@@ -83,6 +83,36 @@ const Feature1Area = styled.div`
         }
         
     }
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        margin-top: 3rem;
+
+        .infocont{
+            height: auto;
+            width: auto;
+            margin-left: 2rem;
+        }
+        
+        img{
+            width: 15rem;
+            margin-left: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            width: 60%;
+        }
+
+        button{
+            font-size: 1rem;
+            padding: 0.4rem 1rem;           
+        }
+    }
 `;
 
 export default Feature1;
