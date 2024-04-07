@@ -15,21 +15,24 @@ const Features = (props) => {
 
 const FeatureArea = styled.div`
     width: 100%;
-    height: 90vh;
-    background-color: #f8eeec;
+    height: 100vh;
+    /* background-color: #f8eeec; */
+    background: url('/images/background.png');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     h1{
-        color: #000000;
-        margin-top: 3rem;
+        color: #ffffff;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 4rem;
         font-weight: 700;
         text-align: center;
-        text-shadow: 0 7px 10px rgba(0,0,0,0.3);
+        text-shadow: 0 7px 10px rgba(255,255,255,0.3);
     }
 
     @media screen and (max-width: 500px) {

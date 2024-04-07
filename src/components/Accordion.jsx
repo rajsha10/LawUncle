@@ -39,12 +39,12 @@ const data = [
         answer: "Law Uncle is web3 app to provide quick guide and consultancy using AI and 101 sessions with Lawyers",
     },
     {
-        Q : 'Question 2',
-        answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorum temporibus labore facere quasi aut alias nihil, debitis atque rerum?",
+        Q : 'How are we integrating web3 into Lawuncle?',
+        answer: "We integrate web3 into LawUncle through the Octo Wallet.",
     },
     {
-        Q : 'Question 3',
-        answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolorum temporibus labore facere quasi aut alias nihil, debitis atque rerum?",
+        Q : 'What we get in Law Uncle',
+        answer: "Get round-the-clock legal support from lawyers or AI chat through our app, ensuring you have expert assistance whenever you need it.",
     }
 ]
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import FontspringDEMOBiennaleBold from "/fonts/Fontspring-DEMO-biennale-bold.otf";
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -26,7 +27,7 @@ const Nav = styled.nav`
     transition: background-color 0.3s ease;
 
     &.scrolled {
-        background-color: #000000;
+        background-color: #161635;
         box-shadow: 0 10px 10px rgba(0,0,0,0.5);
     }
 
@@ -54,7 +55,7 @@ const Header = (props) => {
         };
     }, []);
 
-    const backgroundColor = scrolled ? "#000000" : "transparent";
+    const backgroundColor = scrolled ? "#161635" : "transparent";
 
     return (
         <>
@@ -64,17 +65,36 @@ const Header = (props) => {
                     {/* <h1>Law Uncle</h1> */}
                     <img src="/images/LawUncle2.png" alt="" className="logo" />
                 </Logo>
-                <Menu className="menuNames">
-                    <ul>
-                        <li>Home</li>
-                        <li>Download App &darr;</li>
-                        <li>About Us</li>
-                        <li>Features</li>
-                        <li>FAQs</li>
-                    </ul>
+                <Menu>
+                    {/* Hamburger menu  */}
+                    <div className="menuNames">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Download App &darr;</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div className="hamburgerMenu">
+                            <a href="#">
+                                <img src="/images/menu.png" alt="burger" className="burgerMenu" />
+                            </a>
+                    </div>
+                    
                 </Menu>
                 <HelpCont>Help&#63;</HelpCont>
             </Nav>
+            {/* <BurgerItems>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download App &darr;</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="features">Features</a></li>
+                <li><a href="faq">FAQs</a></li>
+            </ul>
+            </BurgerItems> */}
+            
         </>
     );
 };
@@ -96,7 +116,6 @@ const Logo = styled.div`
 `;
 
 const Menu = styled.div`
-
     width: 50%;
 
     ul{
@@ -109,12 +128,32 @@ const Menu = styled.div`
         align-items: center;
         justify-content: space-between;
     }
-    li{
+    a,li{
+        text-decoration: none;
         color: #ffffff;
     }
 
     li:hover{
         text-decoration: underline;
+    }
+
+    .hamburgerMenu{
+        display: none;
+    }
+
+    
+
+    @media screen and (max-width: 500px) {
+        width: 10%;
+        .hamburgerMenu{
+            display: block;
+        }
+        .burgerMenu{
+            width: 3rem;
+        }
+        .menuNames{
+            display: none;
+        }
     }
 `;
 
@@ -131,6 +170,10 @@ const HelpCont = styled.button`
 
     &:hover{
         box-shadow: 0 5px 10px rgba(255,255,255,0.4);
+    }
+
+    @media screen and (max-width: 500px) {
+        display: none;
     }
 `;
 

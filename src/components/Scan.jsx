@@ -18,7 +18,8 @@ const Scan = (prosp) => {
 }
 
 const ScanArea = styled.div`
-    background-color: #f0ebe1;
+    /* background-color: #f0ebe1; */
+    
     width: 100%;
     height: 30rem;
     display:flex;

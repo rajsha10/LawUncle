@@ -5,13 +5,12 @@ const About = (props) => {
     return(<>
         <AboutArea className="aboutArea">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit, minus nesciunt consequuntur id quia soluta temporibus repudiandae quos perferendis numquam tempora sed nihil ducimus eveniet distinctio quasi odit quisquam inventore non sint facilis veritatis. 
-            Expedita error repellendus doloremque vero?</p>
+            <p>We struggle to defend ourselves due to a lack of understanding of our rights and the fear it instills.</p>
         
         <ImgCont>
-            <AboutImg imageAdd='/images/law.jpg' />
-            <AboutImg imageAdd='/images/law.jpg' />
-            <AboutImg imageAdd='/images/law.jpg' />
+            <AboutImg imageAdd='/images/screen.png' />
+            <AboutImg imageAdd='/images/screen.png' />
+            <AboutImg imageAdd='/images/screen.png' />
         </ImgCont>
         
         </AboutArea>
@@ -22,19 +21,21 @@ const About = (props) => {
 
 const AboutArea = styled.div`
     width: 100%;
-    height: 100vh;
-    background-color: #28282B;
+    height: 80vh;
+    /* background-color: #f8eeec; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     color: #ffffff;
+    padding-bottom: 5rem;
 
     h1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 4rem;
         font-weight: 700;
         text-align: center;
+        color: #000000;
     }
     
     p{

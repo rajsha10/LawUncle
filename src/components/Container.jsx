@@ -10,12 +10,14 @@ const GlobalStyle = createGlobalStyle`
 const Container = (props) => {
     return(<>
         <Heading className="heading">
-          <h1>Law Uncle</h1>
-          <p>Justice Delayed is Justice Denied</p>
-          
-          <a href="https://drive.google.com/file/d/1xVLZSpwhDDv0NEr-rzjhkeipELo5v5tZ/view?usp=drive_link">
-          <button>Download our app</button>
-          </a>
+          <div className="logorea">
+            <h1>Law Uncle</h1>
+              <p>Justice Delayed is Justice Denied</p>
+              
+              <a href="#">
+              <button>Download our app</button>
+              </a>
+          </div>
         </Heading>
     </>);
 };
@@ -23,17 +25,23 @@ const Container = (props) => {
 const Heading = styled.div`
     font-family: 'Fontspring DEMO Biennale Bold';
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 60px;
-    margin-top: 15rem;
+    justify-content: center;
+
+    .logorea{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
     
     h1{
+      color: #fff;
       font-size: 15rem;
-      letter-spacing: 50px;
+      letter-spacing: 40px;
       text-align: center;
       text-shadow: 0 5px 10px rgba(0,0,0,1);
     }
@@ -57,6 +65,7 @@ const Heading = styled.div`
       opacity: 0.8;
       cursor: pointer;
       transition: all 0.17s ease;
+      margin-top: 2rem;
 
       &:hover{
         scale: 1.02;

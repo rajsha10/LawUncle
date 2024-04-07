@@ -45,12 +45,16 @@ const Footer = (props) => {
 }
 
 const FootArea = styled.div`
-    background-color: #28282B;
+    /* background-color: #28282B; */
+    background: url('/images/background.png');
+    background-size: cover;
+    background-position: bottom;
     height: 30rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.4);
 
     @media screen and (max-width: 500px) {
         justify-content: space-evenly;

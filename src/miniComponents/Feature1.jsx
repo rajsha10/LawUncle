@@ -54,16 +54,16 @@ const Feature1Area = styled.div`
     h3{
         font-family: 'Fontspring DEMO Biennale Bold';
         font-size: 4rem;
-        color: #343434;
-        text-shadow: 0 7px 10px rgba(54, 69, 79, 0.4);
+        color: #ffffff;
+        text-shadow: 0 7px 10px rgba(255,255,255, 0.4);
     }
     
     p{
         font-family: 'Fontspring DEMO Biennale Bold';
         font-size: 1.7rem;
         width: 60%;
-        color: #36454F;
-        text-shadow: 0 7px 10px rgba(54, 69, 79, 0.3);
+        color: #ffffff;
+        text-shadow: 0 7px 10px rgba(255,255,255, 0.3);
     }
     
     button{
