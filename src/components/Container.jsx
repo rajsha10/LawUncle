@@ -74,7 +74,7 @@ const Heading = styled.div`
     }
 
     @media screen and (max-width: 500px) {
-      height: 75vh;
+      height: 100vh;
       gap: 20px;
       h1{
         font-size: 5rem;
