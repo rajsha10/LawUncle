@@ -20,6 +20,12 @@ body{
 }
 
 @media screen and (max-width: 500px) {
-  
+  .menuNames{
+    display: none;
+  }
+
+  .hamburgerMenu{
+    display: flex;
+  }
 
 }

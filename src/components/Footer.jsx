@@ -37,7 +37,7 @@ const Footer = (props) => {
                     <img src="/images/twitter.svg" alt="" />
                 </a>
                 <a href="#" target="_blank">
-                    <img src="public/images/insta.svg" alt="" />
+                    <img src="/images/insta.svg" alt="" />
                 </a>
             </Icons>
         </FootArea>
