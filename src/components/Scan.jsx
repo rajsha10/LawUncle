@@ -43,6 +43,23 @@ const ScanArea = styled.div`
         box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
 
+
+    @media screen and (max-width: 500px) {
+        height: auto;
+        padding-bottom: 4rem;
+        flex-direction: column;
+        gap: 4rem;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        img{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+
 `;
 
 export default Scan;

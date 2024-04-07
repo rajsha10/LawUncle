@@ -51,6 +51,11 @@ const FootArea = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    @media screen and (max-width: 500px) {
+        justify-content: space-evenly;
+        height: 30rem;
+    }
 `;
 
 const InfoArea = styled.div`
@@ -77,7 +82,25 @@ const InfoArea = styled.div`
     .rights{
         font-size: 1.2rem;
     }
-    `;
+
+    @media screen and (max-width: 500px) {
+        height: 100%;
+        line-height: 10px;
+        h3{
+            line-height: 10px;
+            font-size: 3rem;
+        }
+        
+        p{
+            font-size: 1.2rem;
+            line-height: 10px;
+        }
+
+        .rights{
+            font-size: 0.6rem;
+        }
+    }
+`;
 
 const Icons = styled.div`
     /* width: 10%; */
@@ -92,6 +115,14 @@ const Icons = styled.div`
     img{
         width: 4rem;
         /* box-shadow: 0 0 10px #f0ebe1; */
+    }
+
+    @media screen and (max-width: 500px) {
+        gap: 1.3rem;
+        img{
+            width: 1.8rem;
+        }
+
     }
 `;
 

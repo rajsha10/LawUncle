@@ -67,3 +67,28 @@ p{
     padding: 2rem 0;
 
 }
+
+
+/* resposnsiv */
+
+@media screen and (max-width: 500px) {
+    .wrapper{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .title{
+        height: 3rem;
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+
+}
