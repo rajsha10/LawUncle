@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import FontspringDEMOBiennaleBold from "/fonts/Fontspring-DEMO-biennale-bold.otf";
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
