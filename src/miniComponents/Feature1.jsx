@@ -106,7 +106,7 @@ const Feature1Area = styled.div`
 
         p{
             font-size: 1.2rem;
-            width: 60%;
+            width: 100%;
         }
 
         button{
