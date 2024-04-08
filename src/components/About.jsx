@@ -8,9 +8,9 @@ const About = (props) => {
             <p>We struggle to defend ourselves due to a lack of understanding of our rights and the fear it instills.</p>
         
         <ImgCont>
-            <AboutImg imageAdd='/images/screen.png' />
-            <AboutImg imageAdd='/images/screen.png' />
-            <AboutImg imageAdd='/images/screen.png' />
+            <AboutImg imageAdd='/images/screen3.png' />
+            <AboutImg imageAdd='/images/screen2.png' />
+            <AboutImg imageAdd='/images/screen1.png' />
         </ImgCont>
         
         </AboutArea>

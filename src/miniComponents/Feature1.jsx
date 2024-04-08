@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 const Feature1 = (props) => {
     return(<>
         <Feature1Area>
-            <img src="/images/nothing.png" alt="" />
+            <img src="/images/f1.jpg" alt="" />
             <div className="infocont">
                 <h3>Anonymous Quick AI Law Guide</h3>
                 <p>Our Anonymous Quick AI Law Guide provides rapid legal guidance to users while 

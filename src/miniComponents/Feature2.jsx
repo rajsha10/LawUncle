@@ -17,7 +17,7 @@ const Feature2 = (props) => {
                 connect with a lawyer for immediate legal advice and guidance.</p>
                 <button>Read More</button>
             </div>
-            <img src="/images/nothing.png" alt="" />
+            <img src="/images/f2.png" alt="" />
         </Feature1Area>
     </>);
 };

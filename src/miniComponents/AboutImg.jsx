@@ -19,6 +19,12 @@ const InfoCont = styled.div`
         object-position: center;
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        cursor: pointer;
+        transition: all 0.16s ease-in;
+
+        &:hover{
+            scale: 1.02;
+        }
     }
 `;
 
