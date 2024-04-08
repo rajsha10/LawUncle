@@ -14,7 +14,8 @@ const Feature1 = (props) => {
             <img src="/images/nothing.png" alt="" />
             <div className="infocont">
                 <h3>Anonymous Quick AI Law Guide</h3>
-                <p>You’ve never made a website this fast before.</p>
+                <p>Our Anonymous Quick AI Law Guide provides rapid legal guidance to users while 
+                maintaining anonymity, ensuring confidentiality throughout the process.</p>
                 <button>Read More</button>
             </div>
         </Feature1Area>
@@ -61,7 +62,7 @@ const Feature1Area = styled.div`
     p{
         font-family: 'Fontspring DEMO Biennale Bold';
         font-size: 1.7rem;
-        width: 60%;
+        width: 100%;
         color: #ffffff;
         text-shadow: 0 7px 10px rgba(255,255,255, 0.3);
     }

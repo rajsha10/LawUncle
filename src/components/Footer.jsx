@@ -36,8 +36,8 @@ const Footer = (props) => {
                 <a href="https://twitter.com/LawUncles" target="_blank">
                     <img src="/images/twitter.svg" alt="" />
                 </a>
-                <a href="#" target="_blank">
-                    <img src="/images/insta.svg" alt="" />
+                <a href="https://github.com/jishnu-baruah/LawUncle.git" target="_blank">
+                    <img src="/images/github.svg" alt="" />
                 </a>
             </Icons>
         </FootArea>

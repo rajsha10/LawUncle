@@ -13,7 +13,8 @@ const Feature2 = (props) => {
         <Feature1Area>
             <div className="infocont">
                 <h3>Instant 101 Session With Lawyer</h3>
-                <p>Works like the canvas tools you’re familiar with.</p>
+                <p>Instant Lawyer Consultation" allows users to quickly 
+                connect with a lawyer for immediate legal advice and guidance.</p>
                 <button>Read More</button>
             </div>
             <img src="/images/nothing.png" alt="" />
@@ -62,7 +63,7 @@ const Feature1Area = styled.div`
     p{
         font-family: 'Fontspring DEMO Biennale Bold';
         font-size: 1.7rem;
-        width: 60%;
+        width: 100%;
         color: #fff;
         text-shadow: 0 7px 10px rgba(255,255,255, 0.3);
     }
