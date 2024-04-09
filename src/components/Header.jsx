@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import { Link as LinkScroll} from "react-scroll";
 import FontspringDEMOBiennaleBold from "/fonts/Fontspring-DEMO-biennale-bold.otf";
 
 const GlobalStyle = createGlobalStyle`
@@ -18,6 +19,7 @@ const Nav = styled.nav`
     z-index: 9999;
     top: 0;
     width: 100%;
+    height: 8rem;
     background-color: ${props => props.backgroundColor};
     display: flex;
     justify-content: space-between;
@@ -56,6 +58,8 @@ const Header = (props) => {
 
     const backgroundColor = scrolled ? "#161635" : "transparent";
 
+    const [click, setClick] = useState(true);
+
     return (
         <>
             <GlobalStyle />
@@ -66,33 +70,27 @@ const Header = (props) => {
                 </Logo>
                 <Menu>
                     {/* Hamburger menu  */}
-                    <div className="menuNames">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Download App &darr;</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
                     <div className="hamburgerMenu">
                             <a href="#">
                                 <img src="/images/menu.png" alt="burger" className="burgerMenu" />
                             </a>
                     </div>
-                    
+                    <div className="menuNames">
+                        {
+                            click && 
+                                <ul>
+                                    <li><LinkScroll activeClass="active" to="scollhome" spy={true} smooth={true} offset={0} duration={500}>Home</LinkScroll></li>
+                                    <li><a href="#">Download App &darr;</a></li>
+                                    <li><LinkScroll activeClass="active" to="scollAbout" spy={true} smooth={true} offset={0} duration={500}>About</LinkScroll></li>
+                                    <li><LinkScroll activeClass="active" to="scollFeatures" spy={true} smooth={true} offset={0} duration={500}>Features</LinkScroll></li>
+                                    <li><LinkScroll activeClass="active" to="scollFAQ" spy={true} smooth={true} offset={0} duration={500}>FAQ</LinkScroll></li>
+                                </ul>
+                            
+                        }   
+                    </div>
                 </Menu>
                 <HelpCont>Help&#63;</HelpCont>
             </Nav>
-            {/* <BurgerItems>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Download App &darr;</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="features">Features</a></li>
-                <li><a href="faq">FAQs</a></li>
-            </ul>
-            </BurgerItems> */}
             
         </>
     );
@@ -116,7 +114,6 @@ const Logo = styled.div`
 
 const Menu = styled.div`
     width: 50%;
-
     ul{
         list-style: none;
         text-decoration: none;
@@ -143,7 +140,11 @@ const Menu = styled.div`
     
 
     @media screen and (max-width: 500px) {
-        width: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
         .hamburgerMenu{
             display: block;
         }
@@ -151,7 +152,21 @@ const Menu = styled.div`
             width: 3rem;
         }
         .menuNames{
-            display: none;
+            width: 100%;
+            transition : all 0.2s ease;
+            /* display: none; */
+        }
+        .menuNames ul{
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1rem;
+            position: absolute;
+            right: 0;
+            top: 7rem;
+            background-color: #161635;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: -5px 5px 20px rgba(0,0,0,0.3) ;
         }
     }
 `;

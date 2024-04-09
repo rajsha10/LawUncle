@@ -14,7 +14,7 @@ const Accordion = (props) => {
     }
 
     return(<>
-        <div className="wrapper">
+        <div className="wrapper" id='scollFAQ'>
             <h1>FAQ</h1>
             <div className="accordion">
                 {data.map((item, i) => (

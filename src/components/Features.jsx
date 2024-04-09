@@ -4,7 +4,7 @@ import Feature2 from "../miniComponents/Feature2";
 
 const Features = (props) => {
     return(<>
-        <FeatureArea className="featureArea">
+        <FeatureArea className="featureArea" id="scollFeatures">
             <h1>FEATURES</h1>
             <Feature1 />
             <Feature2 />
@@ -26,7 +26,7 @@ const FeatureArea = styled.div`
 
     h1{
         color: #ffffff;
-        margin-top: 6rem;
+        margin-top: 8rem;
         margin-bottom: 5rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 4rem;

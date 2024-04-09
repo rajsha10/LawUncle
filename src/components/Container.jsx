@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 const Container = (props) => {
     return(<>
-        <Heading className="heading">
+        <Heading className="heading" id="scollhome">
           <div className="logorea">
             <h1>Law Uncle</h1>
               <p>Justice Delayed is Justice Denied</p>
@@ -57,8 +57,8 @@ const Heading = styled.div`
     
     button{
       background-color: transparent;
-      color: white;
-      border: 3px solid #fff;
+      color: green;
+      border: 3px solid green;
       padding: 10px 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.8);
